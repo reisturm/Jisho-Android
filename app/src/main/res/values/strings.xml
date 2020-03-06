@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Jisho</string>
+    <string name="menu1">About</string>
+    <string name="about_text">
+        Welcome to Jisho! To search, you can do the following:\n
+        1) Type the Kanji/Hiragana characters i.e. 今日は\n
+        2) Type Romaji i.e. konnichiha\n
+        3) Type English words in double quotes i.e. \"hello\"\n
+    </string>
+
+</resources>

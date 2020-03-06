@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="365dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:contentDescription="@string/logoDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/jisho" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <EditText
+        android:id="@+id/searchQuery"
+        android:layout_width="275dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/searchPlaceholder"
+        android:importantForAutofill="no"
+        android:inputType="textPhonetic"
+        android:textSize="20sp"
+        android:backgroundTint="@color/colorSecondary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <FrameLayout
+        android:id="@+id/fragment_holder"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchQuery" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
